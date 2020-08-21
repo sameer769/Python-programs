@@ -1,0 +1,20 @@
+#STEP1
+#installation 
+#for this we are going to use the Google Text to speech API also known as gTTS api
+#To install the Gtts API, Open terminal and Type
+#pip install gTTS
+#STEP2
+#Create a folder and open a python file in this folder with the name "audio.py"
+#open "audio.py" and write the code given below
+
+#code
+import os     #The OS module in python provides functions for interacting with the operating system
+from gtts import gTTS
+text=input('enter ur text to covert:')
+lang='en'   #language in which you want to convert
+myobj=gTTS(text=text,lang=lang,slow=False)
+myobj.save("audio.mp3")
+os.system("audio.mp3")   #playing the converted file
+
+#RUN the code 
+#your text file will be converted into an audio file and will be saved in the same folder
