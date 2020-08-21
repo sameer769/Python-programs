@@ -1,0 +1,20 @@
+#1 REVERSING 
+#CODE
+x=input('Enter')
+w=''
+for i in x:
+           w=i+w
+print(w)
+
+
+#2 CHECKING IF PALINDROME
+#CODE
+x=input('Enter')
+w=''
+for i in x:
+           w=i+w
+print(w)
+if(x==w):
+           print('palindrome')
+else:
+           print('not a palindrome')
